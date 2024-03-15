@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/site.css" rel="stylesheet" type="text/css">
+    <title>James Rogers - Portfolio</title>
+</head>
+    <body class="portfolio">
+        <nav>
+            <a href="/portfolio">Portfolio</a> / <a href="../index.html">Résumé</a>
+        </nav>
+        <section id="most-recent">
+            <h2>Most Recent</h2>
+            <a href="https://brooksrunning.com" class="hero"><img src="../img/brooks.webp" alt=""></a>
+            <div>
+                <a href="https://brooksrunning.com" class="external">Brooks Running</a>
+                <p>Significant feature work included:</p>
+                <ul style="margin-left: 1em;">
+                    <li>rules-based product badge refresh/rework</li>
+                    <li>custom cart "size sampling" feature using TrueFit (which you can see in the picture over there on the left)</li>
+                    <li>Narvar SMS order notifications, extension of the site's popular, and very intricate, <a
+                            href="https://brooksrunning.com/en_us/shoefinder" style="text-decoration: underline;">Shoe Finder</a></li>
+                    <li>various site performance work which, in one instance, reduced product image sizes on detail pages by 2/3rds</li>
+                    <li>Zendesk support site theme updates</li>
+                </ul>
+            </div>
+        </section>
+        <section id="previously">
+            <h2>
+                Previously
+                <span>(current site probably does not reflect my contribution)</span>
+            </h2>
+
+            <div>
+                <img src="../img/hub-small.webp" alt="">
+                <div class="container">
+                    <h3>Hub</h3>
+                    <p>A real estate discovery site, written in React.</p>
+                    <p>The front-end employed React's Context + Hooks for state management. Almost all class-based components were factored out. The CSS was largely BEM-ified.</p>
+                    <p>The backend: Django/DRF, AWS, S3, Docker, Gitlab</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 9px;">
+                <a href="http://www.naturescare.com"><img src="../img/natures-care.png" alt=""></a>
+                <div class="container">
+                    <a href="http://www.naturescare.com" class="external" target="_blank">Nature’s Care</a>
+                    <p>Working within Scotts’ challenging CMS, I “re-skinned” both desktop and mobile versions of the site. Due to internal template and architecture limitations, the markup and includes are not as clean or optimized as I would like. The effort, however, resulted in a dramatic improvement over the previous site.</p>
+                </div>
+            </div>
+        </section>
+        <section id="way-way-back">
+            <h2>Way, way back</h2>
+            <div>
+                <a href="http://www.addictinggames.com" class="external" target="_blank">Addicting Games</a>
+                <p>While the site has since been redesigned, I was responsible for moving the front-end code from PHP-generated static HTML to dynamic Tiles/JSTL pages which were served from Akamai using ESI. I also overhauled the Facebook login integration and profile section.</p>
+            </div>
+            <div>
+                <h3>Others</h3>
+                There were many. They are all gone.
+            </div>
+        </section>
+    </body>
+</html>

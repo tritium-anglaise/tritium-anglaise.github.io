@@ -1,0 +1,12 @@
+body.resume {
+  padding: 0 5rem; }
+  body.resume header {
+    align-items: baseline;
+    display: flex; }
+    body.resume header ul {
+      display: flex;
+      margin-left: auto; }
+    body.resume header li {
+      margin-right: 1.5rem; }
+      body.resume header li:first-child {
+        list-style-type: none; }

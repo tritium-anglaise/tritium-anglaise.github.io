@@ -2,15 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Coming soon!</title>
-    <style>
-        img {
-            display: flex;
-            margin: 25% auto;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Rogers - Resume</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
 </head>
-<body>
-    <img src="construction.gif" height="124" width="184" alt="Under construction!">
+<body class="resume">
+    <nav class="no-print">
+        <a href="portfolio/">Portfolio</a> / <a href="/">Résumé</a>
+    </nav>
+    <header>
+        <h1>James Rogers</h1>
+        <ul>
+            <li>Seattle, WA 98103</li>
+            <!--email_off-->
+            <li><a href="mailto:j_rogers@outlook.com">j_rogers@outlook.com</a></li>
+            <!--/email_off-->
+            <li class="print"><a href="https://tritium-anglaise.github.io">tritium-anglaise.github.io</a></li>
+        </ul>
+    </header>
+    <section id="summary">
+        <span>Senior front-end developer with over fifteen years of experience building pixel-perfect UIs for diverse businesses with thousands to millions of monthly visitors. Skills are a mix of the battle-tested and bleeding-edge, including the latest JavaScript frameworks & libraries, AWS and Azure.</span>
+    </section>
+    <section id="experience">
+        <div class="job">
+            <div class="job-details">
+                <span><strong>Senior Web Developer,</strong> Brooks Running</span>
+                <span>9/2020 - 2/2024</span>
+            </div>
+            <em>Brooks is a leading manufacturer of running shoes and apparel.</em>
+            <p>Care and feeding of brooksrunning.com - an international SFRA-based SFCC web application. Significant feature work is detailed on my <a href="https://www.linkedin.com/in/j-rogers">LinkedIn</a>.</p>
+            <ul>
+                <li>Design and development of a custom Business Manager extension (with supporting controller & client-side code) to provide a dashboard to enable per-environment feature toggling.</li>
+                <li>Rapid development of Friends & Family portal (Node, Express, Postgres, Azure Functions/Application Services) which allow employees to self-service their participation in the popular program.</li>
+                <li>Creation of Azure-based solution for generating and serving return labels for DHL, FedEx, PostNord, and others.</li>
+            </ul>
+        </div>
+        <div class="job" id="build">
+            <div class="job-details">
+                <span><strong>Principal Front-End Engineer,</strong> CBRE Build</span>
+                <span>3/2020 - 9/2020</span>
+            </div>
+            <div class="job-details">
+                <span><strong>Senior Front-End Engineer</strong></span>
+                <span>4/2018 - 3/2020</span>
+            </div>
+            <em>Build provided innovative technology solutions for CBRE, the world's largest commercial real estate company.</em>
+            <p>Led a small team in the development of Hub, a site for discovering commercial spaces in San Francisco. The site featured a server-rendered React front-end and a Django/DRF backend using Postgres + PostGIS. Both apps ran as Docker containers in AWS/ECS. Developed reusable library for form validation & population that was used throughout the site.</p>
+            Established patterns for
+            <ul class="bort">
+                 <li>state management using React's Hooks & Context, and</li>
+                 <li>SCSS-assisted BEM naming conventions for styled components and coached the Hub team and wider office on their implementation.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <div class="job-details">
+                <strong>Senior Front-End Web Developer,</strong> NPP at Virginia Mason
+                <span>11/2015 - 2/2017</span>
+            </div>
+            <em>NPP is a group purchasing partner that provides discounts on various services to clients.</em>
+            <p>Wrote the majority of a Grails-based revamp of NPP's main site: both front-end (GSP templates, SCSS, JS) and server-side (Groovy controllers, interceptors, etc). Established UI standards and mentored junior developers. Configured Jenkins build/deploy tasks for front-end assets, and NGINX on EC2.</p>
+        </div>
+        <div class="job">
+            <div class="job-details">
+                <strong>Senior Consultant,</strong> Workstate
+                <span>10/2014 - 10/2015</span>
+            </div>
+            <em>Workstate is a technology consulting firm serving national clients with five US offices.</em>
+           <p>Successfully relaunched naturescare.com for Scotts Lawn Care in support of national ad campaign. Web development for Chicago Metropolitan Agency for Planning, Concentric Studios, et al.</p>
+        </div>
+        <div class="job">
+            <div class="job-details">
+                <strong>Software Engineer,</strong> Starmaker Interactive
+                <span>9/2013 - 10/2014</span>
+            </div>
+            <em>StarMaker was an online video network that enabled content creation, sound recording, and talent discovery.</em>
+            <p>Replaced GAE-hosted web2py admin application with an AngularJS app that operated on the same REST endpoints as StarMaker's mobile apps, reducing overall code complexity and speeding feature delivery. Site integrations included YouTube/SignNow APIs and Facebook & G+ OAuth auth flows.</p>
+        </div>
+        <div class="job">
+            <div class="job-details">
+                <strong>Senior Web Developer,</strong> Netpulse
+                <span>9/2012 - 8/2013</span>
+            </div>
+            <em class="no-print">Netpulse built custom-branded apps primarily used in health clubs.</em>
+            <p>Suggested use and led development of API-driven consumer-facing AngularJS app that enabled account login, goal setting, activity feeds, and visualization of data captured by Netpulse’s exercise equipment software. Designed site architecture and APIs with back-end engineers.</p>
+        </div>
+        <div class="job no-print">
+            <div class="job-details">
+                <strong>Senior UI Developer,</strong> MTV Networks
+                <span>3/2010 - 9/2012</span>
+            </div>
+            <p>Led front-end migration of addictinggames.com (20M+ monthly uniques) front-end to JSTL templates. <span class="no-print">Used Akamai ESI to cache async-loaded content, decreasing site load times by ~50% and publish times from hours to < 5 minutes.</span></p>
+        </div>
+        <div class="job no-print">
+            <div class="job-details">
+                <strong>Software Engineer,</strong> McCann Worldgroup / MRM Worldwide
+                <span>8/2008 - 3/2010</span>
+            </div>
+            <p>Full-stack development (ASP.NET, LINQ, jQuery, etc.) on complex, highly-interactive sites for Intel and Microsoft.</p>
+        </div>
+        <div class="job no-print">
+            <strong>Freelance Web Development</strong>
+            <p>Specialized in pixel-perfect cross-platform design implementations for Fitch, TXU, Victoria’s Secret, et al).</p>
+        </div>
+    </section>
+    <section id="skills">
+        <dl>
+            <dt>Expertise in:</dt>
+            <dd>JavaScript, React, HTML, (S)CSS, cross-browser & multi-device development.</dd>
+            <dt>Skilled in:</dt>
+            <dd>SFCC development, Webpack/Grunt/Gulp build wrangling, image production & optimization.</dd>
+            <dt>Other:</dt>
+            <dd>Git, GitHub pull request workflow, Docker, CI/CD configuration, Jira, Agile methodologies.</dd>
+            <dt>Fond of:</dt>
+            <dd>Vim, Elixir, and JetBrains editors.</dd>
+        </dl>
+    </section>
+    <section id="education">
+        BA, Cultural Anthropology, The Ohio State University
+    </section>
 </body>
 </html>
