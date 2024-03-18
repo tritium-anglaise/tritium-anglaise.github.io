@@ -41,11 +41,11 @@ body.resume {
         padding-bottom: .65em; }
     body.resume section.education {
       padding-bottom: 0; }
-  body.resume ul.bort {
+  body.resume ul.resume {
     display: inline;
     list-style-type: none;
     padding-left: 0; }
-    body.resume ul.bort li {
+    body.resume ul.resume li {
       display: inline;
       line-height: 1; }
   body.resume #experience, body.resume #education {
