@@ -1,6 +1,7 @@
 body.resume {
   font-family: "Calibri",  sans-serif;
   font-size: 10.5pt;
+  margin: 0;
   max-width: none;
   padding: 0.15% 2.55% 0 2.55%; }
   body.resume a[href^='http'] {
@@ -39,8 +40,6 @@ body.resume {
       padding-top: .4em; }
       body.resume section ul.underline {
         padding-bottom: .65em; }
-    body.resume section.education {
-      padding-bottom: 0; }
   body.resume ul.resume {
     display: inline;
     list-style-type: none;
@@ -92,8 +91,14 @@ span.hidden {
 #summary span {
   width: 100%; }
 
+em {
+  padding-bottom: 4px;
+}
 .no-print {
   display: none !important; }
 
 .print {
   display: inline-block !important; }
+#education {
+  padding-bottom: 0;
+}

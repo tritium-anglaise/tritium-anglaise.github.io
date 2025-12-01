@@ -1,5 +1,6 @@
 body.resume {
   font-family: "Calibri", sans-serif;
+  background-color: pink;
   font-size: 10.5pt;
   padding: 0.15% 2.55% 0 2.55%; }
   body.resume a[href^='http'] {
@@ -15,3 +16,8 @@ body.resume {
     display: inline-block;
     margin-right: .5rem;
     padding: 0; }
+
+  em {
+    padding-bottom: 4px;
+  }
+

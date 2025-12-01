@@ -22,9 +22,20 @@
         </ul>
     </header>
     <section id="summary">
-        <span>Senior front-end developer with over fifteen years of experience building pixel-perfect UIs for diverse businesses with thousands to millions of monthly visitors. Skills are a mix of the battle-tested and bleeding-edge, including the latest JavaScript frameworks & libraries, AWS and Azure.</span>
+        <span>Senior front-end developer with many years of experience building pixel-perfect UIs for diverse businesses with thousands to millions of monthly visitors. Skills are a mix of the battle-tested and bleeding-edge, including the latest JavaScript frameworks & libraries, AWS and Azure.</span>
     </section>
     <section id="experience">
+        <div class="job">
+            <div class="job-details">
+                <span><strong>Sr. Full Stack Engineer,</strong> Kaiizen</span>
+                <span>3/2024 - 10/25</span>
+            </div>
+            <em>Kaiizen is an AI-forward real estate tech firm.</em>
+            <p>Ground-up development of a <a href="https://apps.apple.com/us/app/kai-agent/id6751349906">React Native app for iOS</a> that is used to determine a property's renovation cost & timelines.</p>
+            <p>
+                Development of a webapp, and associated tooling, that used a custom app serverwhich was used to facilitate off-market real estate transactions. Technologies: React, Typescript, Mapbox, Formik.
+            </p>
+        </div>
         <div class="job">
             <div class="job-details">
                 <span><strong>Senior Web Developer,</strong> Brooks Running</span>
@@ -33,7 +44,7 @@
             <em>Brooks is a leading manufacturer of running shoes and apparel.</em>
             <p class="print">Care and feeding of brooksrunning.com - an international SFRA-based SFCC web application. Significant site feature work is detailed on my <a href="https://tritium-anglaise.github.io">portfolio site</a> and <a href="https://www.linkedin.com/in/j-rogers">LinkedIn</a>.</p>
             <p class="no-print">
-                Care and feeding of a SFRA-based SFCC web application. Significant feature work included: rules-based product badge refresh/rework, custom cart "size sampling" feature using TrueFit, Narvar SMS order notifications, extension of the site's popular, and very intricate, Shoe Finder, various site performance work which, in one instance, reduced product image sizes on detail pages by 2/3rds.
+                Care and feeding of a Salesforce Commerce Cloud (SFRA-based) web application. Significant feature work included: rules-based product badge refresh/rework, custom cart "size sampling" feature using TrueFit, Narvar SMS order notifications, extension of the site's popular, and very intricate, Shoe Finder, various site performance work which, in one instance, reduced product image sizes on detail pages by 2/3rds.
             </p>
             <p class="no-print">
                 Design and implementation of feature flag functionality to allow per-environment feature toggling for both client & server side. Work included a custom Business Manager extension (in React/Preact), supporting controller code, and a design/requirements review that allowed the company to end an unnecessary vendor contract, saving five-figures annually.
@@ -45,8 +56,8 @@
                 Development and maintenance of Azure-based solution for generating and serving PDF/HTML return labels for Brooks' international sites. Originally written for DHL, but grew to support FedEx, PostNord, DPD, and others.
             </p>
             <ul class="print">
-                <li>Design and development of a custom Business Manager extension (with supporting controller & client-side code) to provide a dashboard to enable per-environment feature toggling.</li>
-                <li>Rapid development of Friends & Family portal (Node, Express, Postgres, Azure Functions/Application Services) which allow employees to self-service their participation in the popular program.</li>
+                <li>Design and development of custom feature-flagging functionality for SFCC.</li>
+                <li>Rapid development of Friends & Family portal (Node, Express, Postgres, Azure Functions/Application Services)</li>
                 <li>Creation of Azure-based solution for generating and serving return labels for DHL, FedEx, PostNord, and others.</li>
             </ul>
         </div>
@@ -60,9 +71,9 @@
                 <span>4/2018 - 3/2020</span>
             </div>
             <em>Build provided innovative technology solutions for CBRE, the world's largest commercial real estate company.</em>
-            <p>Led a small team in the development of Hub, a site for discovering commercial spaces in San Francisco. The site featured a server-rendered React front-end and a Django/DRF backend using Postgres + PostGIS. Both apps ran as Docker containers in AWS/ECS. Developed reusable library for form validation & population that was used throughout the site.</p>
-            Established patterns for
-            <ul class="resume">
+            <p>Led a small team in the development of Hub, a site for discovering commercial spaces in San Francisco. The site featured a server-rendered React front-end and a Python (Django/DRF) backend using Postgres + PostGIS. Both apps ran as Docker containers in AWS/ECS. Developed reusable library for form validation & population that was used throughout the site.</p>
+            <span class="no-print">Established patterns for</span>
+            <ul class="resume no-print">
                  <li>state management using React's Hooks & Context, and</li>
                  <li>SCSS-assisted BEM naming conventions for styled components and coached the Hub team and wider office on their implementation.</li>
             </ul>
@@ -73,7 +84,7 @@
                 <span>11/2015 - 2/2017</span>
             </div>
             <em>NPP is a group purchasing partner that provides discounts on various services to clients.</em>
-            <p>Wrote the majority of a Grails-based revamp of NPP's main site: both front-end (GSP templates, SCSS, JS) and server-side (Groovy controllers, interceptors, etc). Established UI standards and mentored junior developers. Configured Jenkins build/deploy tasks for front-end assets, and NGINX on EC2.</p>
+            <p>Wrote the majority of a Grails-based revamp of NPP's main site: both front-end (GSP templates, SCSS, JS) and server-side (Groovy controllers, interceptors, etc). Established UI standards and mentored junior developers.</p>
         </div>
         <div class="job">
             <div class="job-details">
@@ -91,7 +102,7 @@
             <em>StarMaker was an online video network that enabled content creation, sound recording, and talent discovery.</em>
             <p>Replaced GAE-hosted web2py admin application with an AngularJS app that operated on the same REST endpoints as StarMaker's mobile apps, reducing overall code complexity and speeding feature delivery. Site integrations included YouTube/SignNow APIs and Facebook & G+ OAuth auth flows.</p>
         </div>
-        <div class="job">
+        <div class="job no-print">
             <div class="job-details">
                 <strong>Senior Web Developer,</strong> Netpulse
                 <span>9/2012 - 8/2013</span>
@@ -121,11 +132,11 @@
     <section id="skills">
         <dl>
             <dt>Expertise in:</dt>
-            <dd>JavaScript, React, HTML, (S)CSS, cross-browser & multi-device development.</dd>
+            <dd>JavaScript, Typescript, React, HTML, (S)CSS, cross-browser & multi-device development.</dd>
             <dt>Skilled in:</dt>
-            <dd>SFCC development, Webpack/Grunt/Gulp build wrangling, image production & optimization.</dd>
+            <dd>React Native, Webpack/Vite wrangling, image production & optimization.</dd>
             <dt>Other:</dt>
-            <dd>Git, GitHub pull request workflow, Docker, CI/CD configuration, Jira, Agile methodologies.</dd>
+            <dd>Figma, Git, GitHub pull request workflow, Docker, Jira, Agile methodologies.</dd>
             <dt>Fond of:</dt>
             <dd>Vim, Elixir, and JetBrains editors.</dd>
         </dl>

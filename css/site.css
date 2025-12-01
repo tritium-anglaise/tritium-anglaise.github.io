@@ -94,7 +94,8 @@ body.resume header {
       top: 9px; }
 
 body.resume em {
-  display: block; }
+  display: block;
+}
 
 body.resume div.job {
   padding-bottom: 1.5em;
