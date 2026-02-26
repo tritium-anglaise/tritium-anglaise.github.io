@@ -1,0 +1,47 @@
+$black: #404040;
+$white: #ffffff;
+
+article, body, div, dd, dl, dt, header, h1, h2, h3, h4, footer, main, section{
+  box-sizing: border-box;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: $black;
+  font-family: "Lucida Bright", "Georgia", serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 5% 10%;
+}
+
+nav {
+  padding-top: 2em;
+  position: fixed;
+  right: 10%;
+  top: 0;
+
+  a {
+    font-style: italic;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@import "font";
+@import "resume";
+@import "portfolio";
+@import "mobile";

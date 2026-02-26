@@ -1,0 +1,15 @@
+// newer devices
+@media( max-width: 750px ) {
+  nav {
+    padding-top: 1em;
+  }
+
+  @import "mobile/home";
+}
+
+// older devices
+@media( max-width: 480px ) {
+  body.resume {
+    font-size: .6em;
+  }
+}

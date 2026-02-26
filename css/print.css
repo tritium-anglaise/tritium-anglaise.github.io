@@ -1,104 +1,125 @@
 body.resume {
-  font-family: "Calibri",  sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 10.5pt;
-  margin: 0;
   max-width: none;
-  padding: 0.15% 2.55% 0 2.55%; }
-  body.resume a[href^='http'] {
-    color: blue;
-    text-decoration: underline; }
-  body.resume h1 {
-    font-family: "Lato", sans-serif;
-    font-size: 16pt; }
-  body.resume header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: .25em; }
-  body.resume section {
-    display: block;
-    padding-bottom: .9em; }
-    body.resume section:before {
-      color: #666666;
-      content: attr(id);
-      font-family: "Lato", sans-serif;
-      font-size: 12pt;
-      font-weight: 500;
-      text-transform: uppercase;
-      width: 100%; }
-    body.resume section div.job {
-      padding-bottom: 1.2em;
-      width: 100%; }
-    body.resume section dd, body.resume section dl, body.resume section dt {
-      display: inline;
-      width: auto; }
-    body.resume section li {
-      margin-top: 0; }
-    body.resume section p {
-      margin: 0; }
-    body.resume section ul {
-      padding-top: .4em; }
-      body.resume section ul.underline {
-        padding-bottom: .65em; }
-  body.resume ul.resume {
-    display: inline;
-    list-style-type: none;
-    padding-left: 0; }
-    body.resume ul.resume li {
-      display: inline;
-      line-height: 1; }
-  body.resume #experience, body.resume #education {
-    padding-bottom: 0; }
+  padding: 0.15% 2.55% 0 2.55%;
+}
+body.resume a[href^=http] {
+  color: blue;
+  text-decoration: underline;
+}
+body.resume h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 16pt;
+}
+body.resume header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.25em;
+}
+body.resume section {
+  display: block;
+  padding-bottom: 0.9em;
+}
+body.resume section:before {
+  color: #666666;
+  content: attr(id);
+  font-family: "Lato", sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+}
+body.resume section div.job {
+  padding-bottom: 1.2em;
+  width: 100%;
+}
+body.resume section dd, body.resume section dl, body.resume section dt {
+  display: inline;
+  width: auto;
+}
+body.resume section li {
+  margin-top: 0;
+}
+body.resume section p {
+  margin: 0;
+}
+body.resume section ul {
+  padding-top: 0.4em;
+}
+body.resume section ul.underline {
+  padding-bottom: 0.65em;
+}
+body.resume section.education {
+  padding-bottom: 0;
+}
+body.resume ul.resume {
+  display: inline;
+  list-style-type: none;
+  padding-left: 0;
+}
+body.resume ul.resume li {
+  display: inline;
+  line-height: 1;
+}
+body.resume #experience, body.resume #education {
+  padding-bottom: 0;
+}
 
 span.hidden {
-  width: auto !important; }
+  width: auto !important;
+}
 
 #build p {
-  display: inline; }
+  display: inline;
+}
 
 #resume-email:before, #resume-email:after {
-  content: '\f007';
+  content: "\f007";
   display: inline-block;
   font-family: SiteIcons;
   font-size: 6px;
   padding: 0 6px;
   position: relative;
-  top: -1px; }
+  top: -1px;
+}
 
 #resume-nav {
   height: auto;
-  margin-left: auto; }
+  margin-left: auto;
+}
 
 #resume-phone:after {
-  content: '\f007';
+  content: "\f007";
   display: inline-block;
   font-family: SiteIcons;
   font-size: 6px;
   padding: 0 6px;
   position: relative;
-  top: -1px; }
+  top: -1px;
+}
 
 #skills {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 #skills:before, #education:before {
   display: inline-block;
-  width: auto; }
+  width: auto;
+}
 
 #summary:before {
-  display: none; }
-
-#summary span {
-  width: 100%; }
-
-em {
-  padding-bottom: 4px;
+  display: none;
 }
+#summary span {
+  width: 100%;
+}
+
 .no-print {
-  display: none !important; }
+  display: none !important;
+}
 
 .print {
-  display: inline-block !important; }
-#education {
-  padding-bottom: 0;
+  display: inline-block !important;
 }

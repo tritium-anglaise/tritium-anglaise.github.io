@@ -1,0 +1,21 @@
+body.resume {
+  padding: 0 5rem;
+
+  header {
+    align-items: baseline;
+    display: flex;
+
+    ul {
+      display: flex;
+      margin-left: auto;
+    }
+
+    li {
+      margin-right: 1.5rem;
+
+      &:first-child {
+        list-style-type: none;
+      }
+    }
+  }
+}

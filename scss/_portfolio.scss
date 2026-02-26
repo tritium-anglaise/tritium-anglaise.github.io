@@ -1,0 +1,150 @@
+$resizeWidth: 640px;
+
+body.portfolio {
+  padding-top: 10%;
+
+  @media (max-width: $resizeWidth) {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  a {
+    &.external {
+      display: inline-block;
+      font-size: 1.17em;
+      font-weight: bold;
+      margin: .5em 0 .1em 0;
+
+      @media (max-width: $resizeWidth) {
+        margin: 0;
+      }
+
+      &:after {
+        content: '\f006';
+        display: inline-block;
+        font-family: SiteIcons;
+        margin-left: .25em;
+      }
+    }
+  }
+
+  nav {
+    position: absolute;
+  }
+
+  h2 {
+    border-bottom: 1px solid $black;
+    margin-bottom: 1em;
+
+    span {
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  p {
+    margin-top: .25em;
+  }
+
+  section {
+    padding-bottom: 2em;
+
+    @media (max-width: $resizeWidth) {
+      padding-bottom: 1em;
+    }
+  }
+}
+
+.most-recent {
+  display: flex;
+  gap: 1em;
+
+  @media (max-width: $resizeWidth) {
+    justify-content: space-between;
+  }
+
+  div {
+    width: 50%;
+  }
+
+  ul {
+    margin-left: 1em;
+  }
+
+  a.external {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  a.hero {
+    max-width: 55%;
+    img {
+      max-width: 100%;
+
+      @media (max-width: $resizeWidth) {
+        max-width: 243px;
+      }
+    }
+  }
+
+  //div {
+  //  padding-left: 2em;
+  //  max-width: 55%;
+  //
+  //  @media (max-width: $resizeWidth) {
+  //    padding-left: 0;
+  //    max-width: 45%;
+  //  }
+  //}
+}
+
+#previously {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (max-width: $resizeWidth) {
+    flex-direction: column;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  & > div {
+    text-align: center;
+    max-width: 40%;
+
+    @media (max-width: $resizeWidth) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 100%;
+      text-align: left;
+
+      &:last-child {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  @media (max-width: $resizeWidth) {
+    div.container {
+      max-width: 45%;
+    }
+
+  }
+}
+
+#way-way-back {
+  a.external {
+    margin-top: 0;
+  }
+
+  div {
+    padding-bottom: 1em;
+  }
+}

@@ -1,0 +1,165 @@
+$resumeShrink: 895px;
+
+body.resume {
+  @media (max-width: $resumeShrink) {
+    padding: 5% 2.5%;
+  }
+
+  header {
+    padding-bottom: 2em;
+    text-align: right;
+
+    ul {
+      white-space: nowrap;
+    }
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      &:nth-child(2):before  {
+          content: "\000B7";
+          display: inline-block;
+          font-size: 3em;
+          line-height: .1;
+          padding: 0 .1em;
+          position: relative;
+          top: 9px;
+      }
+
+      &:nth-child(3):before {
+        content: "\000B7";
+        display: inline-block;
+        font-size: 3em;
+        line-height: .1;
+        padding: 0 .1em;
+        position: relative;
+        top: 9px;
+      }
+    }
+  }
+
+  em {
+    display: block;
+  }
+
+  div {
+    &.job {
+      padding-bottom: 1.5em;
+      flex-direction: column;
+      margin-left: auto;
+      width: 80%;
+
+      @media (max-width: $resumeShrink) {
+        width: 100%;
+      }
+    }
+
+    &.job-details {
+      display: flex;
+
+      span:last-child {
+        margin-left: auto;
+      }
+
+      strong:after {
+        content: " ";
+        display: inline-block;
+        white-space: pre;
+      }
+    }
+  }
+
+  ul {
+    content: '';
+    padding-left: 20px;
+  }
+
+  .print {
+	display: none;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2.5em;
+
+    @media (max-width: $resumeShrink) {
+      display: block;
+    }
+
+    &:before {
+      content: attr(id);
+      display: flex;
+      font-size: 1.5em;
+      text-transform: capitalize;
+      width: 20%;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    // job descriptions without a company description
+    p:nth-child(2) {
+      margin-top: .1em;
+    }
+  }
+}
+
+dd {
+  display: flex;
+  width: 80%;
+}
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+dt {
+  display: flex;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  width: 15%;
+}
+
+@media (max-width: $resumeShrink) {
+  dl {
+    width: auto;
+  }
+
+  dt {
+    width: 25%;
+  }
+
+  dd {
+    width: 75%;
+  }
+}
+
+#experience {
+  div:last-child {
+    padding-bottom: 0;
+  }
+}
+
+#skills {
+  flex-wrap: nowrap;
+}
+
+#summary {
+  span {
+    padding-top: .4em;
+    width: 80%;
+  }
+}

@@ -1,0 +1,149 @@
+body.resume {
+  font-family: "Calibri",  sans-serif;
+  font-size: 10.5pt;
+  max-width: none;
+  padding: 0.15% 2.55% 0 2.55%;
+
+  a[href^='http'] {
+	color: blue;
+	text-decoration: underline;
+  }
+
+  h1 {
+	font-family: "Lato", sans-serif;
+	font-size: 16pt;
+  }
+
+  header {
+    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: .25em;
+  }
+
+  section {
+    display: block;
+    padding-bottom: .9em;
+
+    &:before {
+      color: #666666;
+      content: attr(id);
+      font-family: "Lato", sans-serif;
+      font-size: 12pt;
+      font-weight: 500;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    div.job {
+	padding-bottom: 1.2em;
+      width: 100%;
+    }
+
+    dd, dl, dt {
+      display: inline;
+      width: auto;
+    }
+
+	li {
+	  margin-top: 0;
+	}
+
+    p {
+      margin: 0;
+    }
+
+	ul {
+	  padding-top: .4em;
+
+	  &.underline {
+		padding-bottom: .65em;
+	  }
+	}
+
+	&.education {
+	  padding-bottom: 0;
+	}
+  }
+
+  ul.resume {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      display: inline;
+      line-height: 1;
+    }
+  }
+
+  #experience, #education {
+    padding-bottom: 0;
+  }
+}
+
+span.hidden {
+  width: auto !important;
+}
+
+#build {
+  p {
+    display: inline;
+  }
+}
+
+#resume-email {
+  &:before, &:after {
+	content: '\f007';
+	display: inline-block;
+	font-family: SiteIcons;
+	font-size: 6px;
+	padding: 0 6px;
+	position: relative;
+	top: -1px
+  }
+}
+
+#resume-nav {
+  height: auto;
+  margin-left: auto;
+}
+
+#resume-phone {
+  &:after {
+	content: '\f007';
+	display: inline-block;
+	font-family: SiteIcons;
+	font-size: 6px;
+	padding: 0 6px;
+	position: relative;
+	top: -1px
+  }
+}
+
+#skills {
+  flex-wrap: wrap;
+}
+
+#skills:before, #education:before {
+  display: inline-block;
+  width: auto;
+}
+
+#summary {
+  &:before {
+    display: none;
+  }
+
+  span {
+    width: 100%;
+  }
+}
+
+.no-print {
+  display: none !important;
+}
+
+.print {
+  display: inline-block !important;
+}
